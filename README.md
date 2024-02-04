@@ -3,8 +3,8 @@ Welcome to the CS-498 research repository! This repository is dedicated to the r
 
 <h2> Project Overview </h2>
 <b>Guidance and Supervision: </b> The research project is expertly guided and supervised by <b>Professor Vlad Veksler.</b> His extensive experience and insights ensure that our work is rigorous and impactful.
-Project Leaders:
-<b>Khagendra Khatra:</b> As one of the project leads, Khagendra initiated this endeavor and continues to drive its progress.
+<b> Project Leaders: </b> </br>
+<b>Khagendra Khatra:</b> As one of the project leads, Khagendra initiated this endeavor and continues to drive its progress.</br>
 <b>Shadip Khadka:</b> Shadip’s leadership has been instrumental in shaping the project’s direction.
 <h2> Contributions </h2>
 We believe in open collaboration and knowledge sharing. All contributions to this repository are made public, allowing fellow researchers, students, and enthusiasts to benefit from our work. Feel free to explore, contribute, and learn!
