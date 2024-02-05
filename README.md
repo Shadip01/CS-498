@@ -1,4 +1,4 @@
-<h1> CS-498 Research Repository </h1>
+<h1> # CS-498 Research Repository </h1>
 Welcome to the CS-498 research repository! This repository is dedicated to the research class of the computer science major core at Caldwell University. Our goal is to foster collaboration, exploration, and innovation in the field of computer science.
 
 <h2> Project Overview </h2>
