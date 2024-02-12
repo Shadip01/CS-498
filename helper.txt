@@ -1,5 +1,6 @@
-1. afno github repo ma gayera sync fork garne
-2. visual studio terminal ma { git pull }
+1. { git fetch upstream }
+2. { git checkout main }
+2.5 { git merge upstream/main }
 3. changes garne
 4. { git add . } 
 5. { git commit -m "reason to change" }
