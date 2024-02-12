@@ -6,3 +6,14 @@
 6. { git push }
 7. github repo ma gayera pull request garne
 8. new pull request garne
+
+Syntax - Semantics for logs (json)
+t - timestamp in ms
+u - cell number
+v - new value
+^ - insert (this has 3 args: index where installation starts, number of characters to delete, string to insert)
+| - cursor position within cell
+_c - cursor position within file 
+_cs - total number of chars in file
+_l - current line number in file
+_ls - total number of lines in file
