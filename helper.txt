@@ -1,0 +1,8 @@
+1. afno github repo ma gayera sync fork garne
+2. visual studio terminal ma { git pull }
+3. changes garne
+4. { git add . } 
+5. { git commit -m "reason to change" }
+6. { git push }
+7. github repo ma gayera pull request garne
+8. new pull request garne
