@@ -484,3 +484,4 @@
 {"|":166,"_ls":14,"_cs":173,"_l":10,"_c":166,"u":0,"t":1707060514791}
 {"|":92,"_ls":14,"_cs":173,"_l":5,"_c":92,"u":0,"t":1707060515270}
 {"t":1707060525277,"_#":"b1KKoM+FYdGfI42nmAEvH+iG6lo="}
+{"u":0,"v":"class MyCat:\n\n    def __init__(self, x, y):\n        self.name = x\n        self.age = y\n\n\nnewCat = MyCat(\"OrangeCat\", 2)\n\nprint(newCat.name)\nprint(newCat.age)\n\n\n","t":1707781595975}
