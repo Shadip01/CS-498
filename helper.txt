@@ -7,7 +7,7 @@
 7. github repo ma gayera pull request garne
 8. new pull request garne
 
-Syntax - Semantics for logs (json)
+Symbols - Semantic for logs (json)
 t - timestamp in ms
 u - cell number
 v - new value
