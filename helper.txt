@@ -7,6 +7,8 @@
 7. github repo ma gayera pull request garne
 8. new pull request garne
 
+You need to extract zip file from BackUpZipDataSet inside DataSet in order to use the stream of the DataSet
+
 Symbols - Semantic for logs (json)
 t - timestamp in ms
 u - cell number
