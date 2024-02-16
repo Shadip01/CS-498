@@ -1,0 +1,78 @@
+{
+  "course": {
+    "institution": "Caldwell University",
+    "name": "CS 196 - Computer Programming II",
+    "url": "https://caldwell.blackboard.com/",
+    "instructor": "Dr. V"
+  },
+  "name": "Assignment 2 - Dunder Methods",
+  "instructions": {
+    "start": "Assignment instructions will be available under README.md below *after* you initialized the assignment.",
+    "work": "<li>Click the README.md below for assignment instructions.</li><li>Click the assignment2.ipynb file to open and edit it.</li><li>Add your code to assignment2.ipynb, run all cells, and save before submitting your assignment.</li>",
+    "submit": "Upload the submission file on blackboard (the submission file will have the <b>.submit</b> extension).",
+    "folded": false
+  },
+  "due": "2024-02-12",
+  "mustBeNew": true,
+  "files": [
+    {
+      "name": "assignment2.ipynb",
+      "tracked": true,
+      "edited": "2024-02-12 23:19",
+      "checksums": {
+        "ok": 0,
+        "unhashed": 1,
+        "last": "NaN-NaN-NaN NaN:NaN"
+      }
+    },
+    {
+      "name": "README.md",
+      "content": "Click on the file **assignment2.ipynb** in this assignment.  \nThis is a jupyter notebook where you will add your code.\n\n**DO NOT INCLUDE YOUR NAME ANYWHERE IN THIS FILE OR IN FILENAME**\n\nIn this notebook you should have the following:\n\n1. Create some class that includes the following\n    - `__init__` method\n    - `__str__` method\n    - `__repr__` method\n    - at least 8 more dunder methods that map onto common functions (e.g., len, bool, reverse) and operators (e.g., del, in, +, -, +=, |, &)\n    - at least 2 dunder methods for attribute and/or item access or deletion\n\n2. Create a few objects of this class\n\n3. Show off all implemented functionality\n   \n4. Make sure you have docstrings, comments and/or markdown where appropriate\n\n5. Execute all cells in this notebook, save.\n\n6. Click the **Create Assignment Submission File** button in this assignment, save the submission file (it will have `.submit` as the file extension), and upload this submission file on blackboard.\n\n\n**DO NOT HAVE THE SAME CLASS DEFINITIONS AS YOUR CLASSMATES**:\n\n- Even if you are working together with your peers, make sure that you implement different sets of dunder methods and that they do different things.\n\nCode will be evaluated for:\n1. code is written and works as intended (e.g., correct calls, correct output, no errors)\n2. clean/efficient code (e.g., no unnecessary code)\n3. naming conventions (e.g., class names are UpperCamelCase)\n4. readability (e.g., meaningful names, separation of code into separate cells)\n5. documentation (e.g., docstrings, comments, argument type specification)\n* click \"View Rubric\" on blackboard under this assignment for more details\n\n"
+    }
+  ],
+  "modified": "2024-02-12 23:45",
+  "currentlyOpen": true,
+  "folder": "/Users/sid/My Drive/CS196/CS 196 - Computer Programming II/Assignment 2 - Dunder Methods",
+  "startDate": "2024-02-12 23:19",
+  "submission": {
+    "agent": {
+      "app": "vscode",
+      "extension": "LectureDot.lecture-assign",
+      "version": "0.0.15"
+    },
+    "date": "2024-02-12 23:44",
+    "files": [
+      {
+        "name": "assignment2.ipynb",
+        "content": "{\n \"cells\": [\n  {\n   \"cell_type\": \"markdown\",\n   \"metadata\": {},\n   \"source\": [\n    \"CS196 Assignment \"\n   ]\n  },\n  {\n   \"cell_type\": \"code\",\n   \"execution_count\": 29,\n   \"metadata\": {},\n   \"outputs\": [\n    {\n     \"name\": \"stdout\",\n     \"output_type\": \"stream\",\n     \"text\": [\n      \"Harry Potter by J.K. Rowling\\n\",\n      \"Book(title=Harry Potter, author=J.K. Rowling, pages=400, publication_year=1997)\\n\",\n      \"400\\n\",\n      \"True\\n\",\n      \"True\\n\",\n      \"43\\n\",\n      \"500\\n\",\n      \"Harry Potter | Lord of the Rings by J.K. Rowling\\n\",\n      \"Harry Potter by J.K. Rowling & J.R.R. Tolkien\\n\",\n      \"False\\n\"\n     ]\n    }\n   ],\n   \"source\": [\n    \"class Book:\\n\",\n    \"    \\\"\\\"\\\"\\n\",\n    \"    A class representing a book.\\n\",\n    \"    \\\"\\\"\\\"\\n\",\n    \"#Three Given Methods\\n\",\n    \"    def __init__(self, title, author, pages, publication_year):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Initialize a Book instance with title, author, number of pages, and publication year.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        self.title = title\\n\",\n    \"        self.author = author\\n\",\n    \"        self.pages = pages\\n\",\n    \"        self.publication_year = publication_year\\n\",\n    \"        self.is_available = True\\n\",\n    \"\\n\",\n    \"    def __str__(self):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Return a string representation of the book.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        return f\\\"{self.title} by {self.author}\\\"\\n\",\n    \"\\n\",\n    \"    def __repr__(self):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Return a representation of the book.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        return f\\\"Book(title={self.title}, author={self.author}, pages={self.pages}, publication_year={self.publication_year})\\\"\\n\",\n    \"\\n\",\n    \"#Adding eight more methods\\n\",\n    \"    def __len__(self):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Return the number of pages in the book.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        return self.pages\\n\",\n    \"\\n\",\n    \"    def __bool__(self):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Return True if the book is available, False otherwise.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        return self.is_available\\n\",\n    \"\\n\",\n    \"    def __contains__(self, word):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Check if the given word is present in the title or author of the book.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        return word in self.title or word in self.author\\n\",\n    \"\\n\",\n    \"\\n\",\n    \"    def __sub__(self, other):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Calculate the difference in publication years between two books.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        return abs(self.publication_year - other.publication_year)\\n\",\n    \"\\n\",\n    \"    def __iadd__(self, pages):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Increase the number of pages in the book.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        self.pages += pages\\n\",\n    \"        return self\\n\",\n    \"\\n\",\n    \"    def __or__(self, other):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Create a new book with the titles of both books combined.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        return Book(title=f\\\"{self.title} | {other.title}\\\", author=self.author, pages=self.pages + other.pages, publication_year=max(self.publication_year, other.publication_year))\\n\",\n    \"\\n\",\n    \"    def __and__(self, other):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Create a new book with the authorship of both books combined.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        return Book(title=self.title, author=f\\\"{self.author} & {other.author}\\\", pages=self.pages + other.pages, publication_year=max(self.publication_year, other.publication_year))\\n\",\n    \"\\n\",\n    \"    def __delitem__(self, key):\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        Delete an attribute of the book.\\n\",\n    \"        \\\"\\\"\\\"\\n\",\n    \"        delattr(self, key)\\n\",\n    \"\\n\",\n    \"\\n\",\n    \"# Creating objects of Book\\n\",\n    \"book1 = Book(\\\"Harry Potter\\\", \\\"J.K. Rowling\\\", 400, 1997)\\n\",\n    \"book2 = Book(\\\"Lord of the Rings\\\", \\\"J.R.R. Tolkien\\\", 600, 1954)\\n\",\n    \"\\n\",\n    \"# Test cases\\n\",\n    \"\\n\",\n    \"#Test for __str__\\n\",\n    \"print(str(book1))  # Output: Harry Potter by J.K. Rowling\\n\",\n    \"#Test for __repr__\\n\",\n    \"print(repr(book1))  # Output: Book(title=Harry Potter, author=J.K. Rowling, pages=400, publication_year=1997)\\n\",\n    \"#Test for __len__\\n\",\n    \"print(len(book1))  # Output: 400\\n\",\n    \"#Test for __bool__\\n\",\n    \"print(bool(book1)) # Output: True\\n\",\n    \"#Test for __contains__\\n\",\n    \"print(\\\"Harry\\\" in book1) # Output: True\\n\",\n    \"#Test for __sub__\\n\",\n    \"print(book1 - book2) # Output: 43\\n\",\n    \"#Test for __iadd__\\n\",\n    \"book1 += 100  \\n\",\n    \"print(book1.pages)  # Output: 500\\n\",\n    \"#Test for __or__\\n\",\n    \"print(book1 | book2)  # Output: Harry Potter | Lord of the Rings by J.K. Rowling\\n\",\n    \"#Test for __and__\\n\",\n    \"print(book1 & book2) # Output: Harry Potter by J.K. Rowling & J.R.R. Tolkien\\n\",\n    \"#Test for __delitem__\\n\",\n    \"del book1[\\\"pages\\\"]  \\n\",\n    \"print(hasattr(book1, \\\"pages\\\")) # Output: False\\n\"\n   ]\n  }\n ],\n \"metadata\": {\n  \"kernelspec\": {\n   \"display_name\": \"Python 3\",\n   \"language\": \"python\",\n   \"name\": \"python3\"\n  },\n  \"language_info\": {\n   \"codemirror_mode\": {\n    \"name\": \"ipython\",\n    \"version\": 3\n   },\n   \"file_extension\": \".py\",\n   \"mimetype\": \"text/x-python\",\n   \"name\": \"python\",\n   \"nbconvert_exporter\": \"python\",\n   \"pygments_lexer\": \"ipython3\",\n   \"version\": \"3.11.5\"\n  }\n },\n \"nbformat\": 4,\n \"nbformat_minor\": 2\n}\n",
+        "checksums": {
+          "ok": 0,
+          "failed": 0,
+          "unhashed": 1,
+          "last": "NaN-NaN-NaN NaN:NaN",
+          "_last": "2024-02-12 23:19"
+        },
+        "tracked": true,
+        "log": {
+          "_c": [],
+          "_cs": [],
+          "updates": [
+            {
+              "t": 1707797961081,
+              "u": 0,
+              "v": "",
+              "_courseId": "CS 196 - Computer Programming II",
+              "_assignmentId": "Assignment 2 - Dunder Methods"
+            }
+          ]
+        }
+      }
+    ],
+    "logs": [
+      {
+        "name": "assignment2.ipynb",
+        "log": "{\"t\":1707797961081,\"u\":0,\"v\":\"\",\"_courseId\":\"CS 196 - Computer Programming II\",\"_assignmentId\":\"Assignment 2 - Dunder Methods\"}\n"
+      }
+    ]
+  }
+}
